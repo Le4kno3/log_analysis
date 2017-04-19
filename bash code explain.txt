@@ -1,0 +1,28 @@
+Create a folder named "log" and store all log files in it
+
+for every file in folder "log"
+		read each line from file
+				check if symbol "[" or "]" is next to pattern
+					if yes then first remove it form the line and then proceed
+				
+
+				extract the time of the format "XX:XX:XX" and store it in a variable
+				
+				extract date if of the pattern [07/17/2005]
+				
+				if not extracted then
+					extract date if of the pattern 09-06-2016
+				
+				if not extracted then
+					extract date if of the pattern Sep 18 
+
+				if not extracted then
+					extract date if of the pattern Fri Sep 18
+				
+				if not extracted then
+					extract date if of the pattern [07/Mar/2004]	
+
+				if nothing is extracted then the format is not recoginized
+
+				finally express the extracted data in "filename;date;time;completelogmessage" format
+				Store this data in a different final.log file seqentially
